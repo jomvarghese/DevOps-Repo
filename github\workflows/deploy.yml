@@ -8,7 +8,6 @@ on: # To which destination
   -main
 
 # Define Jobs
-
 jobs:
   deploy:
   runs-on: ubuntu-redhat
