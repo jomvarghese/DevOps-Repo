@@ -17,7 +17,7 @@ jobs:
 
       # Step 2: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
-        uses: peaceiris/action-gh-pages@v4
+        uses: peaceiris/actions-gh-pages@v4.4.3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: /home/jom/Documents/DevOps/DevOps-Repo
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: /home/jom/Documents/DevOps/DevOps-Repo
