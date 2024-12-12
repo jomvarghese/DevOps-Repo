@@ -13,12 +13,12 @@ jobs:
   runs-on: ubuntu-redhat
 
   steps:
-  #Step-1 : Checkout the repository
-   name: checkout code
-   uses: actions/checkout@v3
+#Step-1 : Checkout the repository
+  - name: checkout code
+    uses: actions/checkout@v3
 
-   #Step-2: Deploy Github Pages
-    name: Deploy to GitHub Pages
+#Step-2: Deploy Github Pages
+  - name: Deploy to GitHub Pages
     uses: peaceiris/action-gh-pages@v4
     with:
       github_token: ${{secrets.GITHUB_TOKEN}}
